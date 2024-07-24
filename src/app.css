@@ -142,9 +142,13 @@ li {
     margin-top: var(--size-7);
 }
 
-.prose :is(ul, ol) {
+.prose :is(ul) {
     list-style-type: '🛡️';
     padding-left: var(--size-5);
+}
+.prose :is(ol) {
+	list-style-type: decimal;
+	padding-left: var(--size-5);
 }
 
 .prose :is(ul, ol) li {
