@@ -14,11 +14,10 @@ categories:
 
 published: true
 ---
-
-## Table of Contents
-
 Hello Everyone 👋 my name is Matthew!
 I'm fairly new to the hacking scene but I want to start documenting my learning as much as possible. I'm currently studying for the Pentest Plus certification and while studying I would like to share what I learn in every chapter of the Comptia Pentest+ exam guide. 
+
+## Table of Contents
 
 ## Cybersecurity Goals and the CIA Triad
 
