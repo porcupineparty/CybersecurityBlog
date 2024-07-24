@@ -8,6 +8,7 @@ import remarkToc from 'remark-toc'
 import rehypeSlug from 'rehype-slug'
 
 
+
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
 	extensions: ['.md'],
@@ -20,6 +21,7 @@ const mdsvexOptions = {
 			themes: ['dracula'],
 			langs: ['ts', 'python', 'ruby', 'c', 'c#', 'c++', 'js', 'markdown', 'bash', 'powershell', 'zsh']})
 			const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme: 'dracula' }))
+			highlighter.dispose
 				
 			return `{@html \`${html}\`}`
 			

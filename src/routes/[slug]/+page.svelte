@@ -12,7 +12,7 @@
 <article>
     <hgroup>
         <h1>{data.meta.title}</h1>
-        <p>Published at {formatDate(data.meta.date)}</p>
+        <p>Published on {formatDate(data.meta.date)}</p>
     </hgroup>
 
     <div class="tags">
@@ -41,12 +41,21 @@
     }
     .tags {
         display: flex;
-        gap: var(--size-3);
-        margin-top: var(--size-7); 
+        flex-wrap: wrap; /* Allow tags to wrap */
+        gap: var(--size-2); /* Space between tags */
+        margin-top: var(--size-2);
+        max-width: 100%; /* Ensure container does not overflow */
     }
 
     .tags > * {
-        padding: var(--size-2) var(size-3);
+        padding: var(--size-1) var(--size-2); /* Adjusted spacing */
         border-radius: var(--radius-round);
+        margin-bottom: var(--size-2); /* Add bottom margin for better spacing when wrapping */
     }
+    .prose {
+        line-height: var(--size-6); /* Improve readability with better line height */
+    
+    }
+
+    
 </style>
