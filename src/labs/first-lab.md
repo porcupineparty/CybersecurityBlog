@@ -36,7 +36,7 @@ These goals directly coincide with the DAD triad which demonstrates what the goa
 
 ## Benefits and Regulatory Requirements
 
-Penetriation Testing Let's us gain knowledge about wheather or not someone would be able to hack our systems, provides a guideline to help fix the systems that have been compromised, and can be specifically focused on a certain system. 
+Penetriation Testing Let's us gain knowledge about whether or not someone would be able to hack our systems, provides a guideline to help fix the systems that have been compromised, and can be specifically focused on a certain system. 
 
 The final reason for a penetration test is for regulatory requirements and compliance. Many standards require that you must adhere to regular penetration tests. 
 
@@ -79,9 +79,31 @@ The Cyber Kill Chain can map to the CompTIA model
 
 There are a lot of Tools you need to know for the Pentest+ exam. Here is a list of all of them and a short synopsis.
 
-<h4>Scanners</h4>
+<h4>Reconnnaissasnce</h4>
 
-1. Nikto: Web Application Scanner
+1. *WHOIS* Looks for records about who owns a domain
+2. *Nslookup* Looks for ip addresses for an organization
+3. *theHarvester* Looks for Email addresses names of employees and details about an organization
+4. *Recon-ng* framework that organizes OSINT tools and work
+5. *Censys* Tool that scans IP addresses and provides information by search engine
+5. *FOCA* (Fingerprinting Organizations with Collected Archives) open source tool that looks for metadata in Word Documents/PDF's and different file formats
+6. *Shodan* Looks for vulnerable IOT devices
+7. *Maltego* Tool that helps visualize information gathered
+
+<h4>Vulnerability Scanners</h4>
+
+1. *Nessus* Commercial vulnerability scanner 
+2. *OpenVas* open source alternative to Nessus
+3. *Sqlmap* automation of sql injection attacks
+4. *Nikto, Wapiti, and W3AF* are open source web application vulnerability scanners. *WPScan* is used to scan wordpress applications
+5. *Security Content Automation Protocol (SCAP)* uses tools to manage compliance with security standards
+
+<h4>Social Engineering</h4>
+
+1. *SET or the Social Engineering Toolkit* is a framework to automate Social Engineering attacks/processes
+2. *BeEF or the Browser Exploitatin Framework* is a toolkit to automate processes related to taking over a victims computer
+
+<h4>Credential Testing Tools</h4>
 
 
 
