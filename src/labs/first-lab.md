@@ -105,8 +105,8 @@ There are a lot of Tools you need to know for the Pentest+ exam. Here is a list 
 
 <h4>Credential Testing Tools</h4>
 
-1. *Hashcat, John the Ripper, Hydra Medusa, Patator, and Cain* are all password cracking tools. 
-2. *CeWL* is a custom wordlist generator. 
+1. *Hashcat, John the Ripper, Hydra Medusa, Patator, and Cain* are all password cracking tools
+2. *CeWL* is a custom wordlist generator
 3. *Mimikatz looks for sensitive credentials in windows memory*
 4. *DirBuster* is a brute-forcing tool which involves enumerating file systems on a server
 
@@ -119,6 +119,50 @@ There are a lot of Tools you need to know for the Pentest+ exam. Here is a list 
 5. *Brakeman* static software analysistool used for scanning ruby on rails applications
 6. *Covenant* Software security testing tool used for testing .NET applications
 5. *TruffleHog* a tool that scans code repositories looking for accidentally published credentials. 
+
+<h4>Network Testing</h4>
+
+1. *Wireshark* Proxy tool that allows pentesters to eavesdrop and analyze traffic
+2. *Hping* allows pentesters to generate network traffic
+3. *Aircrack-ng WiFite, mdk4, Fern and Kismet* Wireless network security testing tools
+4. *Rogue wireless access points* attract connections from unsuspedting sources
+5. *EAPHammer* uses evil twin attacks against WPA2 Enterprise wireless networks
+6. *Reaver* conduct attacks against Wi-Fi protected setup (WPS)
+7. *spooftooph* Used to attack bluetooth devices
+8. *The Wireless Geographic Logging Engine (WiGLE)* open database of wireless networks open access
+9. *Online SSL Checkers* Used to determine whether websites are susceptible to SSL or TLS vuln
+
+<h4>Remote Access</h4>
+
+1. *SSH* Provides secure encrypted connections between systems
+2. *Ncat and NetCat* write data over network connections
+3. *ProxyChains* Allows testers to force connections through a proxy server where they may be inspected and altered before being passed on th etheir final destination
+
+<h4>Exploitation</h4>
+
+1. *Metasploit* the most used exploitation framework and has thousands of plugins
+2. *SearchSploit* allows to search through a database of known exploits
+3. *PowerSploit and Empire* power shell scripts that may be used to automate pentesting
+4. *Responder* toolkit that uses NetBIOS queries from Windows systems on a network
+5. *Impacket* provide low level access to network protocols
+6. *Mitm6* tool used to against ipv6 networks
+6. *CrackMapExec* set of tools that is used to gain access to Active Directory
+
+<h4>Steganography</h4>
+
+1. *Open Steg and Steghide* used to hide text in images and binary files
+2. *Coagula and Sonic Visualizer* embed text in audio files, and Detect alterations in audio files
+3. *Snow* Uses whitespace and tabs within a document to hide info
+4. *TinEye* Reverse image search to find the image that is used in stegonagraphy
+5. *Metagoofil* extracts metadata from a lot of different file types
+
+<h4>CloudTools</h4>
+
+1. *ScoutSuite* cloud auditing tool used in many cloud environments
+2. *CluodBrute* Identify cloud components in an organization
+3. *Pacu* Exploitation framework based on AWS
+4. *Cloud Custodian* used to enforce rules with application security policies with many cloud environments
+
 
 
 
