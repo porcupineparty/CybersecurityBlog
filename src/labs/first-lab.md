@@ -105,6 +105,21 @@ There are a lot of Tools you need to know for the Pentest+ exam. Here is a list 
 
 <h4>Credential Testing Tools</h4>
 
+1. *Hashcat, John the Ripper, Hydra Medusa, Patator, and Cain* are all password cracking tools. 
+2. *CeWL* is a custom wordlist generator. 
+3. *Mimikatz looks for sensitive credentials in windows memory*
+4. *DirBuster* is a brute-forcing tool which involves enumerating file systems on a server
+
+<h4>Debuggers and Software Testing Tools</h4>
+
+1. *Immunity Debugger* supports penetration testing and reverse engineering malware
+2. *GDB* is a open source debugger for linux
+3. *OllyDbg* is a windows debugger that works with binary on the assembly level
+4. *IDA* Commercial debugger that works on windows mac and linux
+5. *Brakeman* static software analysistool used for scanning ruby on rails applications
+6. *Covenant* Software security testing tool used for testing .NET applications
+5. *TruffleHog* a tool that scans code repositories looking for accidentally published credentials. 
+
 
 
 
