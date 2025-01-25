@@ -5,7 +5,7 @@ date: '2024-7-23'
 categories:
     - WSL
     - The Hacker's Playbook
-published: true
+published: FALSE
 ---
 
 <script>

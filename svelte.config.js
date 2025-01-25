@@ -8,7 +8,6 @@ import remarkToc from 'remark-toc'
 import rehypeSlug from 'rehype-slug'
 
 
-
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
 	extensions: ['.md'],
@@ -24,7 +23,6 @@ const mdsvexOptions = {
 			highlighter.dispose
 				
 			return `{@html \`${html}\`}`
-			
 		}
 	},
 	remarkPlugins: [remarkUnwrapImages, [remarkToc, { tight: true}]],
