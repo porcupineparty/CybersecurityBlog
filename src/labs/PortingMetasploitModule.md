@@ -8,7 +8,7 @@ categories:
     - Ruby
     - Exploitation
 
-published: true
+published: false
 ---
 ## Table of Contents
 

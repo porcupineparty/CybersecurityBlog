@@ -7,7 +7,7 @@ categories:
     - Hacking
     - OSINT
     - Enumeration
-published: TRUE
+published: false
 ---
 
 ## Table of Contents
