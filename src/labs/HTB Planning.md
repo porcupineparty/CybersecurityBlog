@@ -8,7 +8,7 @@ categories:
     - OSINT
     - Subdomain brute forcing
     - Local services
-published: True
+published: False
 ---
 
 
