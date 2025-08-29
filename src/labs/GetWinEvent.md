@@ -22,13 +22,14 @@ With this cmdlet we can gather logs from many different sources, including typic
 Sysmon and *ETW* (Event Tracer for Windows). Because this is a powershell cmdlet, it can also be called multiple ways and integrated
 very easily with different services because it sits on top of the *Windows Event Log API*. It is especially useful in powershell scripts
 and C-Sharp code because of the native support they both provide. 
+
 ## Basic Syntax
 
 The Get-WinEvent cmdlet is actually very simple to integrate, let's look at few examples below
 
-***
+```
     Get-WinEvent -ListLog * | Select-Object LogName, RecordCount, IsClassicLog, IsEnabled, LogMode, LogType | Format-Table -AutoSize
-***
+```
 
 This first example is calls the Get-WinEvent cmdlet and then gives the flag *ListLog* This flag is used to list out any 
 available log sources that can be called, it does this by taking the list of log files and condenses them into objects almost like a class in a language like C++, we then pipe that output into another cmdlet called `Select-Object`, which 
@@ -36,30 +37,30 @@ only selects the attributes that you tell it to show. In this case *LogName, Rec
 We then pipe the data associated with those attributes again to another cmdlet Format-Table which automatically creates a visual table for us to look at with the flag `-AutoSize`.
 
 
-***
+```
     Get-WinEvent -ListProvider * | Format-Table -AutoSize
-***
+```
 
 This flag -ListProvider, can be used to see the source of the event within the logs, Like *Powershell* or *System*
 
-***
+```
     Get-WinEvent -LogName 'System' -MaxEvents 50 | Select-Object TimeCreated, ID, ProviderName, LevelDisplayName, Message | Format-Table -AutoSize
-***
+```
 
 The `LogName` flag is used to select which source you want to grab the Logs from. In this case we are selecting the first 50 events from the 
 Windows system log source. As you can see the Select-Object cmdlet is taking different parameters now since we are now focusing
 on the actual events withing the Log file. 
 
-***
+```
     Get-WinEvent -Path 'C:\Tools\chainsaw\EVTX-ATTACK-SAMPLES\Execution\exec_sysmon_1_lolbin_pcalua.evtx' -MaxEvents 5 | Select-Object TimeCreated, ID, ProviderName, LevelDisplayName, Message | Format-Table -AutoSize
-***
+```
 
 You can also specify a specific .evtx file to take events from with the -Path flag, other than that it is the same. 
 
-***
+```
     Get-WinEvent -FilterHashtable @{LogName='Microsoft-Windows-Sysmon/Operational'; ID=1,3} | Select-Object TimeCreated, ID, ProviderName, LevelDisplayName, Message | Format-Table -AutoSize
 
-***
+```
 
 We can use the FilterHashtable flag to further narrow down our search. With it we can specify ID's and other information to look for. 
 Here we use ID 1 and 3, One indicator of compromise that we could look for, which stems from Event ID's 1 and 3 is communication with a C2 server.
